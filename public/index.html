@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=410; user-scalable=no; minimal-ui">
+    <title>شطرنج مدرسه نیکان </title>
+    <link rel="stylesheet" href="lib/chessboard-0.3.0.min.css">
+    <link rel="stylesheet" href="lib/WinJS.4.0/css/ui-light.css" />
+    <link rel="stylesheet" href="/default.css" />
+  </head>
+  <body>
+      <div class="page login" style="background-color:#fcfcfc;width:80%;text-align:center;border-radius:0.5" id='page-Signin'>
+   
+   
+        <div class='logo'></div>
+        <h2 style="font-family:B Yekan">شطرنج مدرسه نیکان</h2>
+      <hr/>
+     
+          <input id='Name'  style="font-family:B Yekan;margin-top:50px"  placeholder="نام          "></input>
+          <br>
+          <input id='Family'  style="font-family:B Yekan; "  placeholder=" نام خانوادگی "></input>
+          <br>
+          <input id='username1'  style="font-family:B Yekan; "  placeholder="نام کاربری        "></input>
+          <br>
+          <input id='Pass1'  style="font-family:B Yekan; "  placeholder="رمز عبور "></input>
+        
+          <br/>
+          
+          <button id='Reg' style="font-family:B Yekan;margin-right:50px;background-color:#0e8b08;cursor:pointer">ثبت نام</button>
+          <button id='login1' style="font-family:B Yekan;margin-right:0px;background-color:#0e8b08;cursor:pointer"> ورود  </button>
+
+      
+        </div>
+    <div class="page login" style="background-color:#fcfcfc;width:80%;text-align:center;display:none" id='page-login'>
+      <div class='logo'></div>
+      <h2 style="font-family:B Yekan">شطرنج مدرسه نیکان</h2>
+      <hr style="opacity:0.5">
+ 
+      <input id='username'  style="font-family:B Yekan;margin-top:50px"  placeholder="نام کاربری        "></input>
+      <input id='Pass'  style="font-family:B Yekan;margin-top:50px"  placeholder="رمز عبور "></input>
+   
+   
+      <br/>
+       
+      <button id='login' style="font-family:B Yekan;margin-right:50px;background-color:#0e8b08;cursor:pointer">ورود</button>
+      <button id='Reg1' style="font-family:B Yekan;background-color:#0e8b08;cursor:pointer">ثبت نام</button>
+      
+    </div>
+    <div class="page lobby" style="font-family:B Yekan;background-color:#fff;width:80%" id='page-lobby'>
+      <p id='userLabel'></p>
+      <div class='logo'></div>
+  
+    
+      <h3 class=Titles >بازی های فعال</h3>
+ 
+      <div id='gamesList' >
+       بازی فعالی موجود نیست
+      </div>
+	  
+      <h3 class=Titles>بازیکن های آنلاین</h3>
+	   
+       <div style="text-align:center;font-size:16px" id='userList'>
+         هیچ بازیکنی آنلاین نیست
+      </div>
+ 
+    </div>
+    <div class="page game" id='page-game'>
+      
+      <div id='game-board' style="width: 400px">
+      </div>
+	  <button id='game-back'   style="font-family:B Yekan;margin-right:80px;margin-top:10px;background-color:#0e8b08;cursor:pointer">بازگشت</button>
+      <button id='game-resign'   style="font-family:B Yekan;margin:10px;background-color:#0e8b08;cursor:pointer">انصراف</button>
+    </div>
+    <script src="lib/socket.io-1.2.0.js"></script>
+    <script src="lib/jquery-1.11.1.js"></script>
+    <script src="lib/WinJS.4.0/js/WinJS.min.js"></script>
+    <script src="lib/chess.min.js"></script> 
+    <script src="lib/chessboard-0.3.0.min.js"></script> 
+    <script src="/default.js"></script>
+    <link rel="stylesheet" href="popupS.css">
+<script src="popupS.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+body {
+	overflow-y: auto;
+	
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+	align-items: center;
+ background-color: #5c87b2;
+    direction:rtl;
+}
+
+.page {
+	margin-top: 20px;
+}
+
+.page-login {
+	display: flex;
+	flex-direction: column;
+}
+	
+	.page.login .logo {
+		
+		background-color: lightgray;
+		background-image: url('/img/chesslogo.jpg');
+		background-size: cover;
+		background-position: center center;
+
+		margin: auto;	
+		margin-top:20px;
+		border-radius:5px;
+		width: 100px;
+		height: 100px;
+	}
+	
+	.page.login button {
+		margin-left: 15px;
+		margin-bottom: 20px;
+		height: 35px;
+	}
+	
+	.page.login input {
+		margin-bottom: 20px;
+		width: 202px;
+		height: 25px;
+		font-size: 12pt;
+		padding: 2px;
+		
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px; 
+	}
+
+	.page.lobby h2 {
+		color: darkgrey;
+	}
+	.page.lobby .logo {
+	display: block;
+	border-radius:5px;
+	}
+	.page.lobby h3 {
+		margin-bottom: 10px;
+		margin-top: 40px;
+	}
+	
+.page.game button {
+	margin-bottom: 10px;	
+}
+
+#page-lobby{
+	display: none;
+}
+
+#page-game {
+	display: none;
+}
+
+.circle {
+	background-color: green;
+	width: 30px;
+	height: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px; 
+}
+.Titles{
+	text-align: center;
+	font-size: 16px;
+	 border:1px solid #5c87b2 ;
+	 background-color :silver;
+	 padding: 20px;
+}
+.circle.offline {
+	background-color: yellow;
+}
+#userLabel
+{text-align: center;
+	background-color: #efefef;
+	padding :50px;
+	margin-top: 0px;
+}
+#gamesList{padding:50px;}#userList{padding:50px;}
